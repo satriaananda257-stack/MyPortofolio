@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="/src/output.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] text-white bg-dark overflow-x-hidden">
+
+  <header class="flex justify-between p-5 px-[5%] bg-primary/50 backdrop-blur-md items-center w-full fixed top-0 left-0 z-10 border-b border-white/20">
+    <a href="/" class="block w-12 h-12">
+      <img src="images/logo.png" class="w-full h-full object-cover" alt="Logo">
+    </a>
+    <nav class="hidden md:flex gap-10 text-white/80">
+      <a href="#home" class="duration-100 hover:text-white hover:scale-105 transition-transform">Home</a>
+      <a href="#about" class="duration-100 hover:text-white hover:scale-105 transition-transform">About</a>
+      <a href="#skill" class="duration-100 hover:text-white hover:scale-105 transition-transform">Skill</a>
+      <a href="#project" class="duration-100 hover:text-white hover:scale-105 transition-transform">Project</a>
+    </nav>
+    <a href="#contact" class="hidden md:block border border-white p-2 px-4 rounded-xl duration-300 hover:bg-white hover:text-dark font-medium">Contact</a>
+    <button id="hamburger" class="md:hidden flex flex-col justify-between w-7.5 h-5.25 relative z-100 cursor-pointer">
+      <span class="block h-0.75 w-full bg-white rounded-[10px] transition-all duration-300"></span>
+      <span class="block h-0.75 w-full bg-white rounded-[10px] transition-all duration-300"></span>
+      <span class="block h-0.75 w-full bg-white rounded-[10px] transition-all duration-300"></span>
+    </button>
+  </header>
+
+  <nav id="mobile-nav" class="fixed top-0 right-full w-[70%] h-screen bg-dark/95 backdrop-blur-[10px] flex flex-col justify-center items-center gap-8 z-99 transition-all duration-500 md:hidden">
+    <a href="#home" class="text-lg text-white hover:text-neon1 transition-colors">Home</a>
+    <a href="#about" class="text-lg text-white hover:text-neon1 transition-colors">About</a>
+    <a href="#skill" class="text-lg text-white hover:text-neon1 transition-colors">Skill</a>
+    <a href="#project" class="text-lg text-white hover:text-neon1 transition-colors">Project</a>
+    <a href="#contact" class="text-lg text-white hover:text-neon1 transition-colors">Contact</a>
+  </nav>
+
+  <main>
+
+    <section id="home" class="flex flex-col justify-center min-h-screen gap-8 px-6 md:px-20 bg-linear-to-r from-teavy to-dark [clip-path:polygon(0_100%,0%_0%,100%_0%,100%_100%,90%_95%)] md:[clip-path:polygon(0_100%,0%_0%,100%_0%,100%_100%,75%_90%)]">
+      <div class="pt-24 md:pt-36">
+        <h1 class="text-xl md:text-2xl font-medium">Hello there I'm</h1>
+        <h2 class="text-4xl md:text-6xl font-semibold mt-2">Ananda Satria</h2>
+      </div>
+      <div class="flex items-center">
+        <span class="bg-neon1 h-0.75 w-8 rounded-md shrink-0"></span>
+        <p class="pl-4 text-base md:text-2xl font-semibold text-neon1">UX/UI Designer | Full Stack Developer | Game Developer</p>
+      </div>
+    </section>
+
+    <section id="about" class="relative min-h-screen flex flex-col md:flex-row justify-center md:justify-between px-6 md:px-[8%] py-20 md:py-28 gap-10 items-center overflow-hidden">
+      <div class="relative bottom-30 shrink-0 hidden md:block">
+        <div class="absolute w-64 h-64 bg-neon2 border-4 border-neon2 rounded-2xl top-4 left-10"></div>
+        <div class="absolute w-64 h-64 border-4 border-neon1 rounded-2xl top-4 left-10 rotate-10"></div>
+      </div>
+      <img src="images/profile.png" class="absolute bottom-53 left-35 w-80 h-80 object-contain z-10 hidden md:block" alt="Portrait of Ananda Satria">
+      <article class="flex flex-col gap-6 max-w-xl text-center md:text-left">
+        <h2 class="text-3xl font-semibold text-neon1">About Me</h2>
+        <h3 class="text-xl md:text-2xl font-bold">I'm a UI/UX Designer &amp; Game Developer</h3>
+        <p class="text-base md:text-lg text-justify leading-relaxed">
+          I am <span class="text-neon2 font-semibold">Ananda Satria,</span> a
+          <span class="text-neon2 font-semibold">UI/UX Designer</span> and
+          <span class="text-neon2 font-semibold">Game Developer</span>
+          who focuses on creating intuitive, user-friendly interfaces and delivering optimal, engaging user experiences across every project I work on.
+        </p>
+        <a href="cv.pdf" download class="text-base text-center rounded-3xl bg-white p-3 px-6 text-dark w-48 mx-auto md:mx-0 transition duration-100 hover:bg-transparent border border-white hover:text-white font-medium mt-2">
+          Download CV
+        </a>
+      </article>
+      <div class="absolute left-0 w-full h-16 bg-linear-to-r from-transparent via-teavy/40 to-transparent bottom-0 pointer-events-none hidden md:block"></div>
+    </section>
+
+
+    <section id="skill" class="py-16 px-4 md:px-5 overflow-hidden">
+      <h2 class="text-2xl md:text-3xl font-medium text-neon1 text-center mt-10 md:mt-20 mb-10 md:mb-16">Skills</h2>
+      <div id="skill-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 md:gap-6 max-w-6xl mx-auto"></div>
+    </section>
+
+    <section id="project" class="py-16 md:py-24 px-4 md:px-[5%]">
+      <h2 class="text-center text-3xl md:text-4xl font-bold text-neon1 mb-10 md:mb-12">My Projects</h2>
+      <div class="grid grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-4 md:gap-8">
+
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2.5 hover:shadow-xl transition-all duration-300">
+          <div class="h-28 md:h-55 bg-linear-to-br from-purple to-blue overflow-hidden flex items-center justify-center">
+            <img src="images/Project(1).png" alt="Taskemon Trainer" class="w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-6">
+            <h3 class="text-sm md:text-xl font-semibold mb-1 md:mb-2 text-text-dark-soft">Taskémon Trainer</h3>
+            <p class="text-text-muted mb-2 md:mb-4 leading-relaxed text-xs hidden md:block">Platform To-Do List bertema Pokémon yang dirancang untuk membuat produktivitas terasa menyenangkan. Setiap tugas adalah makhluk "Taskémon" yang perlu kamu taklukkan dengan disiplin dan fokus.</p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-4">
+              <span class="bg-tag-bg text-tag-text px-3 py-1 rounded-full text-xs font-medium">HTML</span>
+              <span class="bg-tag-bg text-tag-text px-3 py-1 rounded-full text-xs font-medium">CSS</span>
+              <span class="bg-tag-bg text-tag-text px-3 py-1 rounded-full text-xs font-medium">TypeScript</span>
+              <span class="bg-tag-bg text-tag-text px-3 py-1 rounded-full text-xs font-medium">Vite</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://github.com/satriaananda257-stack/To-do-list---Gotta-Do-Em-All-" class="flex items-center gap-1 text-purple font-medium hover:text-blue transition-colors text-sm">
+                <iconify-icon icon="mdi:github" width="16" height="16"></iconify-icon> Code
+              </a>
+              <a href="https://to-dolist-gotta-do-em-all.netlify.app/" class="flex items-center gap-1 text-purple font-medium hover:text-blue transition-colors text-sm">
+                <iconify-icon icon="mdi:open-in-new" width="16" height="16"></iconify-icon> Visit
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2.5 hover:shadow-xl transition-all duration-300">
+          <div class="h-28 md:h-55 bg-linear-to-br from-purple to-blue overflow-hidden flex items-center justify-center">
+            <img src="images/Project(2).png" alt="ArtVue" class="w-full h-full object-cover">
+          </div>
+          <div class="p-3 md:p-6">
+            <h3 class="text-sm md:text-xl font-semibold mb-1 md:mb-2 text-text-dark-soft">ArtVue</h3>
+            <p class="text-text-muted mb-2 md:mb-4 leading-relaxed text-xs hidden md:block">ArtVue adalah website pameran seni digital yang menampilkan berbagai karya visual dalam tampilan modern dan estetik, memudahkan pengunjung menikmati dan mengeksplorasi karya seni secara online.</p>
+            <div class="hidden md:flex flex-wrap gap-2 mb-4">
+              <span class="bg-tag-bg text-tag-text px-3 py-1 rounded-full text-xs font-medium">HTML</span>
+              <span class="bg-tag-bg text-tag-text px-3 py-1 rounded-full text-xs font-medium">CSS</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://github.com/satriaananda257-stack/To-do-list---Gotta-Do-Em-All-" class="flex items-center gap-1 text-purple font-medium hover:text-blue transition-colors text-sm">
+                <iconify-icon icon="mdi:github" width="16" height="16"></iconify-icon> Code
+              </a>
+              <a href="https://artvue.netlify.app/" class="flex items-center gap-1 text-purple font-medium hover:text-blue transition-colors text-sm">
+                <iconify-icon icon="mdi:open-in-new" width="16" height="16"></iconify-icon> Visit
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 px-4 md:px-[5%] bg-linear-to-br from-purple to-blue text-white relative overflow-hidden">
+      <div class="absolute w-100 h-100 rounded-full bg-white/10 -top-25 -right-25 pointer-events-none"></div>
+      <div class="absolute w-75 h-75 rounded-full bg-white/10 -bottom-25 -left-25 pointer-events-none"></div>
+
+      <h2 class="text-center text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+      <p class="text-center text-base md:text-lg opacity-90 mb-10 md:mb-14 max-w-xl mx-auto">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto relative z-10">
+        <div class="flex flex-col justify-center gap-6 md:gap-8">
+          <div class="flex items-center gap-4 md:gap-5">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+              <iconify-icon icon="mdi:map-marker" width="26" height="26"></iconify-icon>
+            </div>
+            <div>
+              <h3 class="text-lg md:text-xl font-semibold mb-1">Location</h3>
+              <p class="opacity-90 text-sm md:text-base">Depok, Indonesia</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 md:gap-5">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+              <iconify-icon icon="mdi:email" width="26" height="26"></iconify-icon>
+            </div>
+            <div>
+              <h3 class="text-lg md:text-xl font-semibold mb-1">Email</h3>
+              <p class="opacity-90 text-sm md:text-base">satriaananda257@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 md:gap-5">
+            <div class="w-12 h-12 md:w-14 md:h-14 bg-white/20 rounded-full flex items-center justify-center shrink-0">
+              <iconify-icon icon="mdi:phone" width="26" height="26"></iconify-icon>
+            </div>
+            <div>
+              <h3 class="text-lg md:text-xl font-semibold mb-1">Phone</h3>
+              <p class="opacity-90 text-sm md:text-base">+62 813 1746 9393</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 md:p-10 rounded-2xl shadow-2xl">
+          <form action="https://formspree.io/f/movojgyv" method="POST">
+            <div class="mb-5">
+              <label for="name" class="block mb-2 text-text-dark-soft font-medium text-sm md:text-base">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required
+                class="w-full px-4 py-3 border border-border-input rounded-lg text-sm md:text-base text-text-dark-soft focus:outline-none focus:border-purple focus:ring-2 focus:ring-purple/10 transition-colors">
+            </div>
+            <div class="mb-5">
+              <label for="email" class="block mb-2 text-text-dark-soft font-medium text-sm md:text-base">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required
+                class="w-full px-4 py-3 border border-border-input rounded-lg text-sm md:text-base text-text-dark-soft focus:outline-none focus:border-purple focus:ring-2 focus:ring-purple/10 transition-colors">
+            </div>
+            <div class="mb-5">
+              <label for="message" class="block mb-2 text-text-dark-soft font-medium text-sm md:text-base">Your Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" required rows="4"
+                class="w-full px-4 py-3 border border-border-input rounded-lg text-sm md:text-base text-text-dark-soft focus:outline-none focus:border-purple focus:ring-2 focus:ring-purple/10 transition-colors resize-y min-h-30"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-linear-to-r from-purple to-blue text-white py-3 px-8 rounded-full font-medium cursor-pointer hover:-translate-y-1 hover:shadow-lg hover:shadow-purple/40 transition-all duration-300">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="bg-footer-bg text-white pt-12 md:pt-16 px-4 md:px-[5%] pb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8 md:gap-10 max-w-6xl">
+
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-purple">Ananda Satria</h3>
+        <p class="hidden md:block opacity-80 leading-relaxed mb-5 text-sm md:text-base">UI/UX Designer &amp; Game Developer passionate about creating exceptional digital experiences that combine aesthetics with functionality.</p>
+        <div class="flex gap-5 items-center">
+          <a href="/" class="text-neon1 hover:text-white transition-colors">
+            <iconify-icon icon="mdi:linkedin" width="24" height="24"></iconify-icon>
+          </a>
+          <a href="https://github.com/satriaananda257-stack" class="text-neon1 hover:text-white transition-colors">
+            <iconify-icon icon="mdi:github" width="24" height="24"></iconify-icon>
+          </a>
+          <a href="https://www.instagram.com/madeby.ananda/" class="text-neon1 hover:text-white transition-colors">
+            <iconify-icon icon="mdi:instagram" width="24" height="24"></iconify-icon>
+          </a>
+          <a href="/" class="text-neon1 hover:text-white transition-colors">
+            <iconify-icon icon="mdi:whatsapp" width="26" height="26"></iconify-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden md:block">
+        <h4 class="text-base md:text-lg font-semibold mb-6 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-10 after:h-0.75 after:bg-linear-to-r after:from-purple after:to-blue">Quick Links</h4>
+        <ul class="space-y-3">
+          <li><a href="#home" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Home</a></li>
+          <li><a href="#about" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">About</a></li>
+          <li><a href="#skill" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Skills</a></li>
+          <li><a href="#project" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Projects</a></li>
+          <li><a href="#contact" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-base md:text-lg font-semibold mb-6 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-10 after:h-0.75 after:bg-linear-to-r after:from-purple after:to-blue">Services</h4>
+        <ul class="space-y-3">
+          <li><a href="#project" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">UI/UX Design</a></li>
+          <li><a href="#project" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Web Development</a></li>
+          <li><a href="#project" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Game Development</a></li>
+          <li><a href="#project" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Game Artist</a></li>
+          <li><a href="#contact" class="opacity-80 hover:text-purple hover:opacity-100 transition-colors text-sm md:text-base">Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="hidden md:block">
+        <h4 class="text-base md:text-lg font-semibold mb-6 relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-10 after:h-0.75 after:bg-linear-to-r after:from-purple after:to-blue">Newsletter</h4>
+        <p class="opacity-80 leading-relaxed text-sm md:text-base">Subscribe to get updates on my latest projects and articles.</p>
+      </div>
+
+    </div>
+
+    <div class="border-t border-text-dark-soft pt-6 mt-10 text-center opacity-70 text-sm">
+      <p>&copy; 2025 Ananda Satria. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.style.right === '0px';
+      mobileNav.style.right = isOpen ? '-100%' : '0px';
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { mobileNav.style.right = '-100%'; });
+    });
+  </script>
+  <script src="/app/skill.js"></script>
+  <script src="/app/app.js"></script>
+</body>
+
+</html>

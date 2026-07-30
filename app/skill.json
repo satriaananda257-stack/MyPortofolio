@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nama": "HTML",
+    "gambar": "../images/html.png",
+    "level": 75
+  },
+  {
+    "id": 2,
+    "nama": "CSS",
+    "gambar": "../images/css.png",
+    "level": 60
+  },
+  {
+    "id": 3,
+    "nama": "JavaScript",
+    "gambar": "../images/js.png",
+    "level": 30
+  },
+  {
+    "id": 4,
+    "nama": "TypeScript",
+    "gambar": "../images/typescript.png",
+    "level": 20
+  },
+  {
+    "id": 5,
+    "nama": "Figma",
+    "gambar": "../images/figma.png",
+    "level": 75
+  },
+  {
+    "id": 6,
+    "nama": "Flutter",
+    "gambar": "../images/flutter.png",
+    "level": 1
+  },
+  {
+    "id": 7,
+    "nama": "React",
+    "gambar": "../images/react.png",
+    "level": 9
+  },
+  {
+    "id": 8,
+    "nama": "Python",
+    "gambar": "../images/python.png",
+    "level": 1
+  },
+  {
+    "id": 9,
+    "nama": "Tailwind",
+    "gambar": "../images/tailwind.png",
+    "level": 1
+  },
+  {
+    "id": 10,
+    "nama": "Nextjs",
+    "gambar": "../images/nextjs.png",
+    "level": 1
+  }
+]
